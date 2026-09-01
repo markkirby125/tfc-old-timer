@@ -6,6 +6,7 @@
 
 ## Closed Tasks
 
+- [x] **P1 — AGENTS.md Slimdown & Knowledge Offload** — pro · `writing-for-agents`. Slim AGENTS.md, offload facts to docs/reference/, and index into codebase-memory-mcp (158 nodes, 223 edges). (Closed: 2026-09-01)
 - [x] **P1 — Repository Setup** — pro · `native`. Repository fork setup and basic scaffolding. (Closed: 2026-09-01)
 - [x] **P1 — Template Refactor** — flash · `code-implementer`. Refactor index.html to remove generic template placeholder copy. (Closed: 2026-09-01)
 - [x] **P1 — SEO & Copy Implementation** — pro · `seo-content`. Implement keyword-optimised copy, technical specs, step-by-step guides, and FAQ. (Closed: 2026-09-01)
