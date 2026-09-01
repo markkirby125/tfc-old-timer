@@ -3,6 +3,7 @@
 ## Open Tasks
 
 - [ ] **P2 — Cloudflare Web Analytics** — flash · `cloudflare`. Embed Cloudflare Web Analytics beacon token into main/index.html and whitelist static.cloudflareinsights.com in CSP headers.
+- [ ] **P2 — IndexNow for Bing Indexing** — flash · `seo-bing`. Host IndexNow verification key file at domain root and configure automatic URL submission protocol.
 
 ## Closed Tasks
 
