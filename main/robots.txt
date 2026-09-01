@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tfc-old-timer.tcp123.com/sitemap.xml
