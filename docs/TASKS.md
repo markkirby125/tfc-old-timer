@@ -2,7 +2,7 @@
 
 ## Open Tasks
 
-*(No open tasks remaining)*
+- [ ] **P2 — Cloudflare Web Analytics** — flash · `cloudflare`. Embed Cloudflare Web Analytics beacon token into main/index.html and whitelist static.cloudflareinsights.com in CSP headers.
 
 ## Closed Tasks
 
