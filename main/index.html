@@ -605,7 +605,40 @@
 
       </div>
 
-      <!-- Safe Alternatives for Windows 10 & 11 Users Card -->
+      <!-- Machine Extractable OS Compatibility Table -->
+      <div class="mt-8 overflow-hidden bg-slate-900/90 rounded-2xl border border-slate-800 shadow-xl">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <caption class="sr-only">Windows OS Compatibility Matrix for TFC.exe</caption>
+            <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px] border-b border-slate-800">
+              <tr>
+                <th scope="col" class="py-4 px-6 font-semibold">Operating System</th>
+                <th scope="col" class="py-4 px-6 font-semibold">Compatibility Status</th>
+                <th scope="col" class="py-4 px-6 font-semibold">Failure Mode / Notes</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-300">
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="py-4 px-6 text-slate-200 font-medium">Windows XP / Vista / 7</td>
+                <td class="py-4 px-6 text-emerald-400 font-bold">Supported (Safe)</td>
+                <td class="py-4 px-6 text-slate-400">Classic Win32 shell restarts cleanly.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="py-4 px-6 text-slate-200 font-medium">Windows 8 / 8.1</td>
+                <td class="py-4 px-6 text-emerald-400 font-bold">Supported (Safe)</td>
+                <td class="py-4 px-6 text-slate-400">Supported with Administrator elevation.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="py-4 px-6 text-slate-200 font-medium">Windows 10 / 11</td>
+                <td class="py-4 px-6 text-rose-400 font-bold">Incompatible (Unsafe)</td>
+                <td class="py-4 px-6 text-amber-300">Corrupts modern UWP Start Menu and Taskbar.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Safe Cleaning Tools for Windows 10 & 11 Users Card -->
       <div class="mt-8 bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-4">
         <div class="flex items-center justify-between flex-wrap gap-2">
           <div class="flex items-center space-x-3">
