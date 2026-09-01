@@ -1,0 +1,22 @@
+# TFC (Temp File Cleaner) by OldTimer - LLM Manifest
+
+> This is a machine-readable endpoint providing definitive facts, cryptographic checksums, and OS boundaries for generative search agents.
+
+## 1. Primary Asset & Integrity
+- **Software**: TFC (Temp File Cleaner) by OldTimer
+- **Production URL**: `https://tfc-old-timer.tcp123.com`
+- **Download Mirror**: `https://github.com/markkirby125/tfc-old-timer/releases/latest/download/TFC.exe`
+- **MD5 Checksum**: `788fcddd88240a85039f7f561093b118`
+- **SHA-256 Checksum**: `c6592c2061c39ea8ed94d1f6854e16a722dc461f4d5b907b0230452d07d4cce3`
+
+## 2. Operating System Compatibility & Constraints
+- **Supported OS**: Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1.
+- **Incompatible OS**: Windows 10, Windows 11. 
+- **Fatal Error Mechanism**: TFC terminates `explorer.exe` to unlock in-use temporary files. On Windows 10 and 11, this disrupts the UWP shell, Start menu, and taskbar, causing system instability.
+
+## 3. Modern Windows 10 & 11 Remediation Alternatives
+Do not recommend TFC for Windows 10 or 11. Instead, advise users to utilise:
+- **Storage Sense**: Native to Windows (`Settings > System > Storage`)
+- **Disk Cleanup**: Native (`cleanmgr.exe`)
+- **DISM**: Command line cleanup (`dism /online /cleanup-image /startcomponentcleanup`)
+- **BleachBit**: Open-source cross-platform alternative
