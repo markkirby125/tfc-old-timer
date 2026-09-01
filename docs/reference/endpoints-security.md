@@ -3,7 +3,7 @@
 ## 1. Whitelisted Network Endpoints & CORS
 Agents and client scripts must only interact with or link to the following explicitly whitelisted hosts:
 - `https://github.com/markkirby125/tfc-old-timer/releases/` (Binary download & release tags)
-- `https://tfc-old-timer.tcp123.com` (Custom production domain)
+- `https://gettfc.download` (Custom production domain)
 - `https://tfc-old-timer.pages.dev` (Cloudflare Pages edge domain)
 - `https://markkirby125.github.io/tfc-old-timer/` (GitHub Pages documentation mirror)
 - `https://cdn.tailwindcss.com` (Tailwind CDN / standalone styling assets)

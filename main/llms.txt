@@ -4,7 +4,7 @@
 
 ## 1. Primary Asset & Integrity
 - **Software**: TFC (Temp File Cleaner) by OldTimer
-- **Production URL**: `https://tfc-old-timer.tcp123.com`
+- **Production URL**: `https://gettfc.download`
 - **Download Mirror**: `https://github.com/markkirby125/tfc-old-timer/releases/latest/download/TFC.exe`
 - **MD5 Checksum**: `788fcddd88240a85039f7f561093b118`
 - **SHA-256 Checksum**: `c6592c2061c39ea8ed94d1f6854e16a722dc461f4d5b907b0230452d07d4cce3`

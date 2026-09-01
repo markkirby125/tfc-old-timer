@@ -4,9 +4,9 @@
 
 *(No open tasks remaining)*
 
-
 ## Closed Tasks
 
+- [x] **P1 — Custom Domain Migration (gettfc.download)** — flash · `cloudflare`. Migrate canonical headers, sitemaps, robots.txt, and metadata to https://gettfc.download. (Closed: 2026-09-01)
 - [x] **P1 — JSON-LD Schema Enrichment** — flash · `seo-schema`. Enrich SoftwareApplication and FAQPage schemas with exact checksums, OS support ranges, and conversational Q&As. (Closed: 2026-09-01)
 - [x] **P1 — Edge Deployment & Live Audit** — flash · `wrangler`. Deploy static root main/ to Cloudflare Pages, verify HTTP headers, validate schema, and commit changes via Git. (Closed: 2026-09-01)
 - [x] **P1 — BLUF 30% Content Front-Loading** — pro · `seo-content`. Refactor the hero and top 300 words of main/index.html with declarative Bottom-Line-Up-Front facts, verified hashes, and immediate OS compatibility flags. (Closed: 2026-09-01)

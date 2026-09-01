@@ -1,8 +1,8 @@
 # TFC (Temp File Cleaner) by OldTimer
 
 [![Release](https://img.shields.io/github/v/release/markkirby125/tfc-old-timer?style=flat-square&color=0ea5e9)](https://github.com/markkirby125/tfc-old-timer/releases/latest)
-[![Live Site](https://img.shields.io/badge/Website-tfc--old--timer.tcp123.com-10b981?style=flat-square)](https://tfc-old-timer.tcp123.com)
-[![Platform](https://img.shields.io/badge/Platform-Legacy%20Windows%20(XP%20%7C%20Vista%20%7C%207%20%7C%208.1)-amber?style=flat-square)](https://tfc-old-timer.tcp123.com)
+[![Live Site](https://img.shields.io/badge/Website-tfc--old--timer.tcp123.com-10b981?style=flat-square)](https://gettfc.download)
+[![Platform](https://img.shields.io/badge/Platform-Legacy%20Windows%20(XP%20%7C%20Vista%20%7C%207%20%7C%208.1)-amber?style=flat-square)](https://gettfc.download)
 [![Downloads](https://img.shields.io/badge/Historical%20Downloads-1.33M%2B-blue?style=flat-square)](https://www.geekstogo.com/forum/files/file/187-tfc-temp-file-cleaner-by-oldtimer/)
 [![Licence](https://img.shields.io/badge/Licence-Freeware%20Archive-lightgrey?style=flat-square)](LICENSE)
 
@@ -39,7 +39,7 @@
 | :--- | :--- | :--- | :--- |
 | **Primary Binary** | [**Download TFC.exe**](https://github.com/markkirby125/tfc-old-timer/releases/latest/download/TFC.exe) | Portable Executable (`.exe`) | ~438 KB |
 | **Releases Tag** | [**GitHub Releases Hub**](https://github.com/markkirby125/tfc-old-timer/releases) | Release Assets | All Releases |
-| **Live Web App** | [**tfc-old-timer.tcp123.com**](https://tfc-old-timer.tcp123.com) | Cloudflare Pages Edge | Static Site |
+| **Live Web App** | [**gettfc.download**](https://gettfc.download) | Cloudflare Pages Edge | Static Site |
 
 ---
 

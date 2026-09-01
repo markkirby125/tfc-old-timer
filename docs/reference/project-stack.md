@@ -2,7 +2,7 @@
 
 ## 1. Project Identity & Architecture
 - **Project Name**: TFC (Temp File Cleaner) by OldTimer Mirror & Remediation Guide
-- **Production URL**: `https://tfc-old-timer.tcp123.com`
+- **Production URL**: `https://gettfc.download`
 - **Preview / Edge URL**: `https://tfc-old-timer.pages.dev`
 - **GitHub Pages Mirror**: `https://markkirby125.github.io/tfc-old-timer/`
 - **Repository**: `markkirby125/tfc-old-timer`

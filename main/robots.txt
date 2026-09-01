@@ -7,4 +7,4 @@ User-agent: ClaudeBot
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://tfc-old-timer.tcp123.com/sitemap.xml
+Sitemap: https://gettfc.download/sitemap.xml
