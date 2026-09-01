@@ -3,10 +3,10 @@
 ## Open Tasks
 
 - [ ] **P2 — Cloudflare Web Analytics** — flash · `cloudflare`. Embed Cloudflare Web Analytics beacon token into main/index.html and whitelist static.cloudflareinsights.com in CSP headers.
-- [ ] **P2 — IndexNow for Bing Indexing** — flash · `seo-bing`. Host IndexNow verification key file at domain root and configure automatic URL submission protocol.
 
 ## Closed Tasks
 
+- [x] **P2 — IndexNow for Bing Indexing** — flash · `seo-bing`. Host IndexNow verification key file at domain root and configure automatic URL submission protocol. (Closed: 2026-09-01)
 - [x] **P1 — Custom Domain Migration (gettfc.download)** — flash · `cloudflare`. Migrate canonical headers, sitemaps, robots.txt, and metadata to https://gettfc.download. (Closed: 2026-09-01)
 - [x] **P1 — JSON-LD Schema Enrichment** — flash · `seo-schema`. Enrich SoftwareApplication and FAQPage schemas with exact checksums, OS support ranges, and conversational Q&As. (Closed: 2026-09-01)
 - [x] **P1 — Edge Deployment & Live Audit** — flash · `wrangler`. Deploy static root main/ to Cloudflare Pages, verify HTTP headers, validate schema, and commit changes via Git. (Closed: 2026-09-01)
