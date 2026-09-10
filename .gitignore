@@ -1,0 +1,15 @@
+# AI / Codebase Memory
+.codebase-memory/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Root level files not in AGENTS.md structure
+/index.html
+/hero.png
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
