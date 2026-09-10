@@ -1012,13 +1012,28 @@
 
       <div class="mt-12 max-w-4xl mx-auto space-y-6">
         
+        <!-- Security Warning -->
+        <div class="bg-amber-950/40 border border-amber-500/40 rounded-2xl p-6 flex items-start space-x-4 shadow-lg">
+          <div class="flex-shrink-0 mt-1 text-amber-400">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <div class="space-y-1">
+            <h4 class="text-lg font-bold text-amber-300">Zero-Trust Binary Verification</h4>
+            <p class="text-sm text-amber-200/80 leading-relaxed">
+              Always take precautions when downloading closed-source executables from the internet. Before executing, verify the file against <a href="https://www.virustotal.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-100">VirusTotal</a> and confirm the MD5/SHA-256 checksums match the historical values listed above.
+            </p>
+          </div>
+        </div>
+
         <!-- Step 1 -->
         <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 flex items-start space-x-4 card-hover">
           <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-500 text-white font-bold flex items-center justify-center text-lg shadow-md shadow-brand-500/30">1</div>
           <div class="space-y-1">
             <h4 class="text-lg font-bold text-white">Confirm OS Version & Save All Work</h4>
             <p class="text-sm text-slate-300 leading-relaxed">
-              Verify your machine is running <strong class="text-emerald-400">Windows XP, Vista, 7, or 8.1</strong>. Save all open documents and close all active web browsers, word processors, and programs.
+              Verify your machine is running <strong class="text-emerald-400">Windows XP, Vista, 7, or 8.1</strong>. Save all open documents. <strong>TFC aggressively terminates ALL user-level processes</strong> (browsers, word processors, applications) without warning before it runs.
             </p>
           </div>
         </div>
@@ -1063,9 +1078,9 @@
         <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 flex items-start space-x-4 card-hover">
           <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center text-lg shadow-md shadow-emerald-500/30">5</div>
           <div class="space-y-1">
-            <h4 class="text-lg font-bold text-white">Review Summary & Confirm System Reboot</h4>
+            <h4 class="text-lg font-bold text-white">Review Summary & Execute System Reboot</h4>
             <p class="text-sm text-slate-300 leading-relaxed">
-              When complete, TFC reports total reclaimed disk space. If prompted with a reboot dialogue, click <strong class="text-white font-semibold">Reboot</strong> to complete the removal of boot-locked files.
+              When complete, TFC reports total reclaimed disk space. TFC forces a mandatory system reboot to finalize the removal of boot-locked files. Click <strong class="text-white font-semibold">Reboot</strong> when prompted.
             </p>
           </div>
         </div>
