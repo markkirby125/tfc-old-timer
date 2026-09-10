@@ -1,5 +1,6 @@
 # AI / Codebase Memory
 .codebase-memory/
+.gemini/
 
 # OS generated files
 .DS_Store
@@ -13,3 +14,11 @@ Thumbs.db
 *.zip
 *.tar.gz
 *.rar
+
+# Affiliate & Internal Docs
+docs/affiliate*
+docs/surfshark*
+docs/avangate*
+
+# Unrelated Projects
+github-projects/WinClearCache*
