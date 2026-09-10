@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://gettfc.download/sitemap.xml

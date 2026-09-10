@@ -86,7 +86,8 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "TFC - Temp File Cleaner",
-    "operatingSystem": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1 (Legacy OS Archive)",
+    "alternateName": "Temp File Cleaner by OldTimer",
+    "operatingSystem": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1",
     "applicationCategory": "UtilitiesApplication",
     "author": {
       "@type": "Person",
@@ -101,6 +102,18 @@
     "fileSize": "438 KB",
     "description": "TFC (Temp File Cleaner) by OldTimer is a lightweight legacy Windows utility designed to completely clear temporary file caches, locked browser caches, LocalService, NetworkService, and system junk across all user profiles on Windows XP, Vista, 7, and 8.1.",
     "softwareVersion": "3.1.9.0",
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "MD5",
+        "value": "788fcddd88240a85039f7f561093b118"
+      },
+      {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "c6592c2061c39ea8ed94d1f6854e16a722dc461f4d5b907b0230452d07d4cce3"
+      }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -282,7 +295,12 @@
           </h1>
 
           <p class="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            The definitive legacy malware remediation utility engineered to purge temporary files, locked browser caches, <code class="text-brand-300 font-mono text-sm">LocalService</code>, and <code class="text-brand-300 font-mono text-sm">NetworkService</code> junk across all user profiles.
+            <strong>TFC.exe (Temp File Cleaner) by OldTimer</strong> is a standalone 438 KB freeware utility for Windows XP, Vista, 7, and 8.1 that forcefully terminates <code class="text-brand-300 font-mono text-sm">explorer.exe</code> to purge locked temporary files across all user profiles. 
+            <br><br>
+            <span class="text-sm">
+              <strong>MD5:</strong> <code class="bg-slate-900 px-1.5 py-0.5 rounded select-all font-mono text-brand-300">788fcddd88240a85039f7f561093b118</code><br>
+              <strong>SHA-256:</strong> <code class="bg-slate-900 px-1.5 py-0.5 rounded select-all font-mono text-brand-300">c6592c2061c39ea8ed94d1f6854e16a722dc461f4d5b907b0230452d07d4cce3</code>
+            </span>
           </p>
 
           <!-- High-Visibility Windows 10 & 11 Advisory Banner -->
@@ -431,7 +449,7 @@
       <div class="text-center max-w-3xl mx-auto space-y-4">
         <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400">Precision Target Scope</h2>
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-          What TFC Purges vs What It Preserves
+          What Does TFC by OldTimer Actually Clean?
         </h3>
         <p class="text-slate-300 text-base md:text-lg">
           Unlike aggressive generic system cleaners, TFC was purpose-built for malware technicians to clear locked infection caches without touching user history or critical system prefetch buffers.
@@ -510,7 +528,7 @@
       <div class="max-w-3xl mx-auto text-center space-y-4">
         <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Critical Compatibility Breakdown</h2>
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-          Legacy Windows vs Modern Windows 10 & 11
+          Is TFC Temp File Cleaner Safe for Windows 10 and 11?
         </h3>
         <p class="text-slate-300 text-base md:text-lg leading-relaxed">
           Understanding where TFC is safe to use and why modern Windows requires native cleaning tools.
@@ -587,7 +605,40 @@
 
       </div>
 
-      <!-- Safe Alternatives for Windows 10 & 11 Users Card -->
+      <!-- Machine Extractable OS Compatibility Table -->
+      <div class="mt-8 overflow-hidden bg-slate-900/90 rounded-2xl border border-slate-800 shadow-xl">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <caption class="sr-only">Windows OS Compatibility Matrix for TFC.exe</caption>
+            <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px] border-b border-slate-800">
+              <tr>
+                <th scope="col" class="py-4 px-6 font-semibold">Operating System</th>
+                <th scope="col" class="py-4 px-6 font-semibold">Compatibility Status</th>
+                <th scope="col" class="py-4 px-6 font-semibold">Failure Mode / Notes</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-300">
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="py-4 px-6 text-slate-200 font-medium">Windows XP / Vista / 7</td>
+                <td class="py-4 px-6 text-emerald-400 font-bold">Supported (Safe)</td>
+                <td class="py-4 px-6 text-slate-400">Classic Win32 shell restarts cleanly.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="py-4 px-6 text-slate-200 font-medium">Windows 8 / 8.1</td>
+                <td class="py-4 px-6 text-emerald-400 font-bold">Supported (Safe)</td>
+                <td class="py-4 px-6 text-slate-400">Supported with Administrator elevation.</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="py-4 px-6 text-slate-200 font-medium">Windows 10 / 11</td>
+                <td class="py-4 px-6 text-rose-400 font-bold">Incompatible (Unsafe)</td>
+                <td class="py-4 px-6 text-amber-300">Corrupts modern UWP Start Menu and Taskbar.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Safe Cleaning Tools for Windows 10 & 11 Users Card -->
       <div class="mt-8 bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-4">
         <div class="flex items-center justify-between flex-wrap gap-2">
           <div class="flex items-center space-x-3">
@@ -645,7 +696,7 @@
       <div class="text-center max-w-3xl mx-auto space-y-4">
         <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400">Tool Ecosystem Analysis</h2>
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-          How TFC Compares to Other Utilities
+          TFC vs Storage Sense, Disk Cleanup, and BleachBit
         </h3>
         <p class="text-slate-300 text-base md:text-lg">
           Historical overview comparing OldTimer's TFC to classic tools like Atribune's ATF Cleaner and modern cleaners.
@@ -674,6 +725,20 @@
                 <td class="py-4 px-6 text-emerald-400 font-semibold">Yes (Halts Explorer)</td>
                 <td class="py-4 px-6 text-emerald-400 font-semibold">Yes (Leaves Untouched)</td>
                 <td class="py-4 px-6 text-slate-200">Legacy Windows (XP / 7 / 8.1) Malware Sweep</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="py-4 px-6 text-slate-200 font-medium">Windows Storage Sense</td>
+                <td class="py-4 px-6 text-slate-400">Current User (Native)</td>
+                <td class="py-4 px-6 text-rose-400">No (Skips locked files)</td>
+                <td class="py-4 px-6 text-emerald-400">Yes</td>
+                <td class="py-4 px-6 text-slate-400">Windows 10/11 Automated Cleanup</td>
+              </tr>
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="py-4 px-6 text-slate-200 font-medium">Disk Cleanup (cleanmgr.exe)</td>
+                <td class="py-4 px-6 text-emerald-400">System Wide (Admin)</td>
+                <td class="py-4 px-6 text-rose-400">No (Skips locked files)</td>
+                <td class="py-4 px-6 text-emerald-400">Yes</td>
+                <td class="py-4 px-6 text-slate-400">Modern Windows Safe Purge</td>
               </tr>
               <tr class="hover:bg-slate-800/30 transition-colors">
                 <td class="py-4 px-6 text-slate-200 font-medium">ATF Cleaner (Atribune)</td>
@@ -709,7 +774,7 @@
       <div class="text-center max-w-3xl mx-auto space-y-4">
         <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400">Granular Deep Clean</h2>
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-          Complete System Path Index
+          Exact Temporary File Paths Purged by TFC
         </h3>
         <p class="text-slate-300 text-base md:text-lg">
           TFC is specifically engineered to target volatile temporary cache directories where residual junk accumulates over time.
@@ -848,7 +913,7 @@
       <div class="text-center max-w-3xl mx-auto space-y-4">
         <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400">Technical Specifications</h2>
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-          Binary Details & Checksums
+          How to Verify TFC.exe Checksums (MD5 & SHA-256)
         </h3>
         <p class="text-slate-300 text-base md:text-lg">
           Verified details and cryptographic hashes for the official standalone executable.
@@ -936,7 +1001,7 @@
       <div class="text-center max-w-3xl mx-auto space-y-4">
         <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400">Step-by-Step Execution Guide</h2>
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-          How to Safely Run TFC (Legacy Systems)
+          How to Safely Download and Run TFC.exe
         </h3>
         <p class="text-slate-300 text-base md:text-lg">
           Follow these five steps when running TFC on supported legacy Windows machines.
@@ -1013,7 +1078,7 @@
       <div class="text-center max-w-3xl mx-auto space-y-4">
         <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400">Frequently Asked Questions</h2>
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-          Comprehensive Technical FAQ
+          TFC by OldTimer Frequently Asked Questions (FAQ)
         </h3>
         <p class="text-slate-300 text-base md:text-lg">
           Answers to technical questions regarding mechanics, preserved files, legacy tool context, and safety.
