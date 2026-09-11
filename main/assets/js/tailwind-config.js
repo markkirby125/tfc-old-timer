@@ -29,6 +29,7 @@ tailwind.config = {
           600: 'rgb(var(--color-brand-600) / <alpha-value>)',
           700: 'rgb(var(--color-brand-700) / <alpha-value>)',
           900: 'rgb(var(--color-brand-900) / <alpha-value>)',
+          950: 'rgb(var(--color-brand-950) / <alpha-value>)',
         },
         white: 'rgb(var(--color-white) / <alpha-value>)',
         black: 'rgb(var(--color-black) / <alpha-value>)',
@@ -45,6 +46,10 @@ tailwind.config = {
           300: 'rgb(var(--color-amber-300) / <alpha-value>)',
           400: 'rgb(var(--color-amber-400) / <alpha-value>)',
           500: 'rgb(var(--color-amber-500) / <alpha-value>)',
+          600: 'rgb(var(--color-amber-600) / <alpha-value>)',
+          700: 'rgb(var(--color-amber-700) / <alpha-value>)',
+          800: 'rgb(var(--color-amber-800) / <alpha-value>)',
+          900: 'rgb(var(--color-amber-900) / <alpha-value>)',
           950: 'rgb(var(--color-amber-950) / <alpha-value>)',
         },
         rose: {

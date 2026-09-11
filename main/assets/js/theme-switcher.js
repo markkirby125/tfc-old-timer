@@ -72,19 +72,77 @@
       desktopNav.appendChild(createThemeSwitcher());
     }
 
+    // Mobile Nav
+    const mobileNav = document.getElementById('mobile-menu');
+    if (mobileNav) {
+      const mobileContainer = document.createElement('div');
+      mobileContainer.className = 'pt-4 pb-2 border-t border-slate-800 mt-2';
+      
+      const mobileHeader = document.createElement('div');
+      mobileHeader.className = 'px-3 text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2';
+      mobileHeader.textContent = 'Theme';
+      mobileContainer.appendChild(mobileHeader);
+
+      const current = document.documentElement.getAttribute('data-theme');
+      
+      THEMES.forEach(t => {
+        const isActive = t.id === current;
+        const btn = document.createElement('button');
+        btn.setAttribute('data-theme-target', t.id);
+        btn.className = `theme-option w-full text-left px-3 py-2.5 rounded-lg text-base font-medium transition-colors flex items-center justify-between ${isActive ? 'bg-brand-500/10 text-brand-400' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`;
+        btn.innerHTML = `
+          ${t.name}
+          ${isActive ? '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>' : ''}
+        `;
+        
+        btn.addEventListener('click', () => {
+          document.documentElement.setAttribute('data-theme', t.id);
+          localStorage.setItem(STORAGE_KEY, t.id);
+          document.dispatchEvent(new Event('theme-changed'));
+        });
+        
+        mobileContainer.appendChild(btn);
+      });
+      
+      // Insert before the download button container if it exists, else append
+      const downloadBtnContainer = mobileNav.querySelector('.pt-3');
+      if (downloadBtnContainer) {
+        mobileNav.insertBefore(mobileContainer, downloadBtnContainer);
+      } else {
+        mobileNav.appendChild(mobileContainer);
+      }
+    }
+
+
+
     // Update checkmarks when theme changes
     document.addEventListener('theme-changed', () => {
       const activeTheme = document.documentElement.getAttribute('data-theme');
       document.querySelectorAll('.theme-option').forEach(btn => {
         const t = btn.getAttribute('data-theme-target');
+        const theme = THEMES.find(x => x.id === t);
+        
+        // Is this a mobile button?
+        const isMobile = btn.classList.contains('text-base');
+        
         if (t === activeTheme) {
-          btn.className = 'theme-option w-full text-left px-4 py-2.5 text-sm bg-brand-500/10 text-brand-400 font-semibold transition-colors flex items-center justify-between';
-          btn.innerHTML = THEMES.find(x => x.id === t).name + '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>';
+          if (isMobile) {
+            btn.className = 'theme-option w-full text-left px-3 py-2.5 rounded-lg text-base font-medium transition-colors flex items-center justify-between bg-brand-500/10 text-brand-400';
+            btn.innerHTML = theme.name + '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>';
+          } else {
+            btn.className = 'theme-option w-full text-left px-4 py-2.5 text-sm bg-brand-500/10 text-brand-400 font-semibold transition-colors flex items-center justify-between';
+            btn.innerHTML = theme.name + '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>';
+          }
         } else {
-          btn.className = 'theme-option w-full text-left px-4 py-2.5 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors flex items-center justify-between';
-          btn.innerHTML = THEMES.find(x => x.id === t).name;
+          if (isMobile) {
+            btn.className = 'theme-option w-full text-left px-3 py-2.5 rounded-lg text-base font-medium transition-colors flex items-center justify-between text-slate-300 hover:text-white hover:bg-slate-800';
+            btn.innerHTML = theme.name;
+          } else {
+            btn.className = 'theme-option w-full text-left px-4 py-2.5 text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors flex items-center justify-between';
+            btn.innerHTML = theme.name;
+          }
         }
       });
     });
-  });
+
 })();

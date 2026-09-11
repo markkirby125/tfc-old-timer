@@ -25,6 +25,7 @@
   --color-brand-600: 2 132 199;
   --color-brand-700: 3 105 161;
   --color-brand-900: 12 74 110;
+  --color-brand-950: 8 47 73;
 
   /* Accents */
   --color-emerald-300: 110 231 183;
@@ -38,7 +39,11 @@
   --color-amber-300: 252 211 77;
   --color-amber-400: 251 191 36;
   --color-amber-500: 245 158 11;
-  --color-amber-950: 69 26 3;
+    --color-amber-600: 217 119 6;
+  --color-amber-700: 180 83 9;
+  --color-amber-800: 146 64 14;
+  --color-amber-900: 120 53 15;
+--color-amber-950: 69 26 3;
 
   --color-rose-200: 254 205 211;
   --color-rose-300: 253 164 175;
@@ -99,6 +104,7 @@
   --color-brand-600: 0 51 153;
   --color-brand-700: 0 34 102;
   --color-brand-900: 0 17 51;
+  --color-brand-950: 0 17 51;
 }
 
 [data-theme="oldtimer-dark"] {
@@ -131,6 +137,7 @@
   --color-brand-600: 0 128 128;
   --color-brand-700: 0 128 128;
   --color-brand-900: 0 128 128;
+  --color-brand-950: 0 128 128;
 }
 
 /* Oldtimer specific visual overrides for buttons and cards */
