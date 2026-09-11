@@ -283,6 +283,11 @@
         <p class="text-xl text-slate-300">
           The original, standalone utility for deep cleaning Windows temporary files.
         </p>
+
+        <figure class="mt-8 max-w-2xl mx-auto relative rounded-xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-900">
+          <img src="/assets/images/tfc-screenshot-win7.jpg" alt="TFC Temp File Cleaner GUI by OldTimer on Windows 7" class="w-full h-auto block opacity-90 hover:opacity-100 transition-opacity" />
+          <figcaption class="absolute bottom-0 w-full bg-slate-950/80 backdrop-blur p-2.5 text-xs text-center text-slate-300 border-t border-slate-700/50">TFC.exe (Temp File Cleaner) v3.1.9.0 Interface</figcaption>
+        </figure>
         
         <div class="bg-slate-900 border border-slate-700/60 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-slate-900/50">
           <div class="space-y-2 text-center md:text-left">
@@ -337,6 +342,19 @@
         <p>TFC is a focused, single-purpose executable that clears out temporary folders across all Windows user accounts. It bypasses locked files by shutting down the Windows Explorer shell, sweeping out caches that native tools often leave behind, and then restarts the shell.</p>
         
         <p>Unlike modern multi-tools that pad their feature sets with registry cleaners or cookie managers, TFC does one job. It empties temporary data from LocalService, NetworkService, and all user profiles. It intentionally leaves your browser history, saved passwords, and cookies alone.</p>
+
+        <h2 id="sample-output">Sample Execution Log</h2>
+        <p>Upon completion, TFC generates a brief status report detailing the exact amount of space recovered. Because it forcibly halts the shell during execution, it can successfully purge locked payload directories that standard disk cleaners usually skip.</p>
+        <div class="not-prose bg-[#0a0a0a] border border-slate-700 rounded-lg p-5 font-mono text-xs sm:text-sm overflow-x-auto shadow-inner my-6">
+          <pre class="text-emerald-400 leading-relaxed"><code><span class="text-slate-500">--- TFC Temp File Cleaner by OldTimer v3.1.9.0 ---</span>
+Process Explorer.exe terminated successfully.
+Purging C:\Users\Admin\AppData\Local\Temp\*.* ...
+Purging C:\Windows\Temp\*.* ...
+Purging %systemdrive%\*.tmp files ...
+Restarting Explorer.exe ...
+
+<span class="text-white font-bold">Total Space Cleaned: 1,428.32 MB reclaimed on Win7 x64</span></code></pre>
+        </div>
 
         <h2 id="compatibility">Compatibility Warning</h2>
         <p>TFC was built for Windows XP, Vista, 7, and 8.1. <strong>Do not run TFC on Windows 10 or Windows 11.</strong> Modern Windows tightly integrates the Explorer shell with universal apps and the Start Menu. Force-closing it via a legacy tool can corrupt your Start Menu or trigger boot loops with Fast Startup enabled. For modern 64-bit systems, use native Storage Sense, Disk Cleanup, or alternatives like Malwarebytes and BleachBit.</p>
