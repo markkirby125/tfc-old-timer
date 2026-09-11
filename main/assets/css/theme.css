@@ -68,3 +68,91 @@
   /* Accent tweaks for light mode contrast if needed */
   --color-amber-950: 254 243 199; /* Invert the warning box background */
 }
+
+[data-theme="oldtimer-light"] {
+  /* Fonts */
+  --font-sans: 'Tahoma', 'Segoe UI', 'Trebuchet MS', sans-serif;
+  --font-mono: 'Consolas', 'Courier New', monospace;
+
+  /* Classic Windows 7 / Win32 Grays */
+  --color-slate-50: 255 255 255;
+  --color-slate-100: 255 255 255;
+  --color-slate-200: 255 255 255;
+  --color-slate-300: 0 0 0;        /* Main Text */
+  --color-slate-400: 64 64 64;
+  --color-slate-500: 105 105 105;
+  --color-slate-600: 160 160 160;
+  --color-slate-700: 160 160 160;  /* Borders */
+  --color-slate-800: 227 227 227;  /* Hover / Elevated */
+  --color-slate-900: 255 255 255;  /* Panels */
+  --color-slate-950: 240 240 240;  /* Main Background */
+
+  --color-white: 0 0 0;            /* Invert white text */
+  --color-black: 255 255 255;
+
+  /* Classic System Blue */
+  --color-brand-50: 235 244 254;
+  --color-brand-100: 204 228 247;
+  --color-brand-300: 153 204 255;
+  --color-brand-400: 51 153 255;
+  --color-brand-500: 0 84 227;     /* WinXP Luna Blue */
+  --color-brand-600: 0 51 153;
+  --color-brand-700: 0 34 102;
+  --color-brand-900: 0 17 51;
+}
+
+[data-theme="oldtimer-dark"] {
+  /* Fonts */
+  --font-sans: 'Tahoma', 'Segoe UI', 'Trebuchet MS', sans-serif;
+  --font-mono: 'Consolas', 'Courier New', monospace;
+
+  /* High Contrast Retro / Terminal */
+  --color-slate-50: 0 0 0;
+  --color-slate-100: 0 0 0;
+  --color-slate-200: 0 0 0;
+  --color-slate-300: 192 192 192;  /* Main Text (Silver) */
+  --color-slate-400: 128 128 128;
+  --color-slate-500: 128 128 128;
+  --color-slate-600: 128 128 128;
+  --color-slate-700: 255 255 255;  /* Borders */
+  --color-slate-800: 0 0 0;        /* Hover */
+  --color-slate-900: 0 0 0;        /* Panels */
+  --color-slate-950: 0 0 0;        /* Main Background (Black) */
+
+  --color-white: 255 255 255;      
+  --color-black: 0 0 0;
+
+  /* High Contrast Cyan/Blue */
+  --color-brand-50: 0 255 255;
+  --color-brand-100: 0 255 255;
+  --color-brand-300: 0 255 255;
+  --color-brand-400: 0 255 255;
+  --color-brand-500: 0 128 128;    /* Teal */
+  --color-brand-600: 0 128 128;
+  --color-brand-700: 0 128 128;
+  --color-brand-900: 0 128 128;
+}
+
+/* Oldtimer specific visual overrides for buttons and cards */
+[data-theme="oldtimer-light"] .rounded-2xl,
+[data-theme="oldtimer-dark"] .rounded-2xl,
+[data-theme="oldtimer-light"] .rounded-xl,
+[data-theme="oldtimer-dark"] .rounded-xl,
+[data-theme="oldtimer-light"] .rounded-lg,
+[data-theme="oldtimer-dark"] .rounded-lg {
+  border-radius: 0 !important; /* Sharp corners for win32 */
+}
+
+[data-theme="oldtimer-light"] .border-slate-800,
+[data-theme="oldtimer-light"] .border-slate-700 {
+  border-style: inset !important;
+  border-width: 2px !important;
+  border-color: #dfdfdf #808080 #808080 #dfdfdf !important; /* Win32 3D effect */
+}
+
+[data-theme="oldtimer-dark"] .border-slate-800,
+[data-theme="oldtimer-dark"] .border-slate-700 {
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: #ffffff !important; 
+}
