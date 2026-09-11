@@ -67,7 +67,7 @@
     };
 
     // Desktop Nav
-    const desktopNav = document.querySelector('nav.hidden.md\\:flex');
+    const desktopNav = document.getElementById('desktop-nav');
     if (desktopNav) {
       desktopNav.appendChild(createThemeSwitcher());
     }
