@@ -74,38 +74,6 @@
   --color-amber-950: 254 243 199; /* Invert the warning box background */
 }
 
-[data-theme="oldtimer-light"] {
-  /* Fonts */
-  --font-sans: 'Tahoma', 'Segoe UI', 'Trebuchet MS', sans-serif;
-  --font-mono: 'Consolas', 'Courier New', monospace;
-
-  /* Classic Windows 7 / Win32 Grays */
-  --color-slate-50: 255 255 255;
-  --color-slate-100: 255 255 255;
-  --color-slate-200: 255 255 255;
-  --color-slate-300: 0 0 0;        /* Main Text */
-  --color-slate-400: 64 64 64;
-  --color-slate-500: 105 105 105;
-  --color-slate-600: 160 160 160;
-  --color-slate-700: 160 160 160;  /* Borders */
-  --color-slate-800: 227 227 227;  /* Hover / Elevated */
-  --color-slate-900: 255 255 255;  /* Panels */
-  --color-slate-950: 240 240 240;  /* Main Background */
-
-  --color-white: 0 0 0;            /* Invert white text */
-  --color-black: 255 255 255;
-
-  /* Classic System Blue */
-  --color-brand-50: 235 244 254;
-  --color-brand-100: 204 228 247;
-  --color-brand-300: 153 204 255;
-  --color-brand-400: 51 153 255;
-  --color-brand-500: 0 84 227;     /* WinXP Luna Blue */
-  --color-brand-600: 0 51 153;
-  --color-brand-700: 0 34 102;
-  --color-brand-900: 0 17 51;
-  --color-brand-950: 0 17 51;
-}
 
 [data-theme="oldtimer-dark"] {
   /* Fonts */
@@ -141,21 +109,7 @@
 }
 
 /* Oldtimer specific visual overrides for buttons and cards */
-[data-theme="oldtimer-light"] .rounded-2xl,
-[data-theme="oldtimer-dark"] .rounded-2xl,
-[data-theme="oldtimer-light"] .rounded-xl,
-[data-theme="oldtimer-dark"] .rounded-xl,
-[data-theme="oldtimer-light"] .rounded-lg,
-[data-theme="oldtimer-dark"] .rounded-lg {
-  border-radius: 0 !important; /* Sharp corners for win32 */
-}
 
-[data-theme="oldtimer-light"] .border-slate-800,
-[data-theme="oldtimer-light"] .border-slate-700 {
-  border-style: inset !important;
-  border-width: 2px !important;
-  border-color: #dfdfdf #808080 #808080 #dfdfdf !important; /* Win32 3D effect */
-}
 
 [data-theme="oldtimer-dark"] .border-slate-800,
 [data-theme="oldtimer-dark"] .border-slate-700 {
@@ -163,3 +117,90 @@
   border-width: 2px !important;
   border-color: #ffffff !important; 
 }
+
+/* Windows 7 Aero Glass styling for Oldtimer Classic */
+[data-theme="oldtimer-light"] {
+  /* Fonts - Windows 7 defaults to Segoe UI */
+  --font-sans: 'Segoe UI', 'Tahoma', 'Trebuchet MS', sans-serif;
+  
+  /* Aero Glass Base Backgrounds */
+  --color-slate-950: 235 243 252;  /* Windows 7 explorer background (very light blue-white) */
+  --color-slate-900: 255 255 255;  /* Content panels (pure white) */
+  --color-slate-800: 220 230 244;  /* Aero borders / outlines */
+  --color-slate-700: 171 193 222;  /* Darker borders */
+  --color-slate-300: 0 51 153;     /* Aero Text (Dark Blue) */
+  --color-slate-400: 30 57 91;     /* Secondary text */
+  --color-slate-100: 0 0 0;        /* Bold text (black) */
+  
+  --color-white: 0 0 0;
+  --color-black: 255 255 255;
+
+  /* Classic Windows 7 Blue Accents */
+  --color-brand-500: 24 131 215;   /* Aero Button Blue */
+  --color-brand-600: 20 108 178;   /* Aero Button Blue Hover */
+  --color-brand-400: 40 160 250;
+  --color-brand-300: 100 190 255;
+}
+
+/* Aero Glass Header/Nav overrides */
+[data-theme="oldtimer-light"] header {
+  background: rgba(220, 235, 252, 0.6) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Aero Windows / Cards */
+[data-theme="oldtimer-light"] .bg-slate-900,
+[data-theme="oldtimer-light"] .bg-slate-950\/50,
+[data-theme="oldtimer-light"] .bg-slate-900\/50 {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid #aebfd1 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Aero Buttons */
+[data-theme="oldtimer-light"] .bg-brand-500,
+[data-theme="oldtimer-light"] .from-brand-500 {
+  background: linear-gradient(to bottom, #f2f6f9 0%, #e0e9f1 50%, #d1def0 51%, #e5eff8 100%) !important;
+  border: 1px solid #7092be !important;
+  color: #0c1a2e !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 2px rgba(0,0,0,0.05) !important;
+  border-radius: 4px !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8) !important;
+}
+
+[data-theme="oldtimer-light"] .bg-brand-500:hover,
+[data-theme="oldtimer-light"] .from-brand-500:hover {
+  background: linear-gradient(to bottom, #fefefe 0%, #ebf4fb 50%, #dcebfc 51%, #eaf4fc 100%) !important;
+  border-color: #3c7fb1 !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 0 4px rgba(60, 127, 177, 0.5) !important;
+}
+
+/* Fix text colors that get hard-inverted in aero */
+[data-theme="oldtimer-light"] .text-white {
+  color: #000000 !important;
+  text-shadow: none !important;
+}
+
+[data-theme="oldtimer-light"] .text-slate-300 {
+  color: #1e395b !important;
+}
+
+[data-theme="oldtimer-light"] .text-slate-400 {
+  color: #4a5c75 !important;
+}
+
+[data-theme="oldtimer-light"] h1, 
+[data-theme="oldtimer-light"] h2, 
+[data-theme="oldtimer-light"] h3 {
+  color: #003399 !important;
+}
+
+/* Reset borders so it's not the flat Win98 style */
+[data-theme="oldtimer-light"] .rounded-2xl,
+[data-theme="oldtimer-light"] .rounded-xl,
+[data-theme="oldtimer-light"] .rounded-lg {
+  border-radius: 6px !important;
+}
+
