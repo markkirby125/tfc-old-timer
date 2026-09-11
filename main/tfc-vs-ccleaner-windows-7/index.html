@@ -37,7 +37,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/theme.css" />
   <script src="/assets/js/tailwind-config.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <script src="/assets/js/theme-switcher.js"></script>
 
   <style>
@@ -191,13 +191,14 @@
 
         <!-- Desktop Navigation Links (Streamlined 4 Core Categories + GitHub Icon) -->
         <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-300">
-          <a href="#overview" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Overview</a>
-          <a href="#compatibility" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors flex items-center space-x-1.5">
+          <a href="/#overview" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Overview</a>
+          <a href="/#compatibility" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors flex items-center space-x-1.5">
             <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
             <span>Compatibility</span>
           </a>
-          <a href="#matrix" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Purge Targets</a>
-          <a href="#instructions" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Guide & FAQ</a>
+          <a href="/#matrix" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Purge Targets</a>
+          <a href="/#instructions" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">FAQ</a>
+          <a href="/#resources" class="px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Guides</a>
           <a href="https://github.com/markkirby125/tfc-old-timer" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors text-slate-400 hover:text-slate-200" title="GitHub Repository" aria-label="GitHub Repository">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
@@ -231,13 +232,14 @@
 
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-950/95 px-4 pt-3 pb-6 space-y-2">
-      <a href="#overview" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 text-base font-medium">Overview</a>
-      <a href="#compatibility" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-amber-300 hover:text-white hover:bg-slate-800 text-base font-medium flex items-center space-x-2">
+      <a href="/#overview" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 text-base font-medium">Overview</a>
+      <a href="/#compatibility" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-amber-300 hover:text-white hover:bg-slate-800 text-base font-medium flex items-center space-x-2">
         <span class="w-2 h-2 rounded-full bg-amber-400"></span>
         <span>OS Compatibility Advisory</span>
       </a>
-      <a href="#matrix" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 text-base font-medium">Purge Targets & Ecosystem</a>
-      <a href="#instructions" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 text-base font-medium">How to Run & FAQ</a>
+      <a href="/#matrix" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 text-base font-medium">Purge Targets & Ecosystem</a>
+      <a href="/#instructions" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 text-base font-medium">FAQ</a>
+      <a href="/#resources" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-brand-300 hover:text-white hover:bg-slate-800 text-base font-medium">Guides & Resources</a>
       <a href="https://github.com/markkirby125/tfc-old-timer" target="_blank" rel="noopener noreferrer" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 text-base font-medium">GitHub Repository ↗</a>
       <div class="pt-3">
         <a href="https://github.com/markkirby125/tfc-old-timer/releases/latest/download/TFC.exe" class="w-full flex items-center justify-center space-x-2 bg-brand-500 hover:bg-brand-400 text-white font-semibold py-3 px-4 rounded-xl shadow-lg">
@@ -247,6 +249,7 @@
           <span>Download TFC.exe (438 KB)</span>
         </a>
       </div>
+    </div>
     </div>
   </header>
 
@@ -356,12 +359,13 @@
           </p>
         </div>
 
-        <div class="flex items-center space-x-6 text-slate-300 text-sm">
-          <a href="#overview" class="hover:text-white transition-colors">Overview</a>
-          <a href="#compatibility" class="hover:text-white transition-colors">Compatibility</a>
-          <a href="#matrix" class="hover:text-white transition-colors">Purge Targets</a>
-          <a href="#instructions" class="hover:text-white transition-colors">Guide & FAQ</a>
-          <a href="https://github.com/markkirby125/tfc-old-timer" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+        <div class="flex flex-wrap gap-x-6 gap-y-3 text-slate-300 text-sm justify-center md:justify-end max-w-lg">
+          <a href="/tfc-by-oldtimer/" class="hover:text-white transition-colors">TFC Archive</a>
+          <a href="/is-tfc-safe-windows-10/" class="hover:text-white transition-colors">Win 10 Warning</a>
+          <a href="/tfc-vs-ccleaner-windows-7/" class="hover:text-white transition-colors">TFC vs CCleaner</a>
+          <a href="/oldtimer-tools/" class="hover:text-white transition-colors">OldTimer Tools</a>
+          <a href="/how-to-verify-tfc-checksum/" class="hover:text-white transition-colors">Verify Checksums</a>
+          <a href="https://github.com/markkirby125/tfc-old-timer" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors font-medium">GitHub ↗</a>
         </div>
       </div>
 
