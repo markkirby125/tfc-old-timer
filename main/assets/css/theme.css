@@ -1,0 +1,70 @@
+/* --- THEME VARIABLES --- */
+:root, [data-theme="moderna-dark"] {
+  /* Slate - Dark (Default) */
+  --color-slate-50: 248 250 252;
+  --color-slate-100: 241 245 249;
+  --color-slate-200: 226 232 240;
+  --color-slate-300: 203 213 225;
+  --color-slate-400: 148 163 184;
+  --color-slate-500: 100 116 139;
+  --color-slate-600: 71 85 105;
+  --color-slate-700: 51 65 85;
+  --color-slate-800: 30 41 59;
+  --color-slate-900: 15 23 42;
+  --color-slate-950: 2 6 23;
+  
+  --color-white: 255 255 255;
+  --color-black: 0 0 0;
+
+  /* Brand */
+  --color-brand-50: 240 249 255;
+  --color-brand-100: 224 242 254;
+  --color-brand-300: 125 211 252;
+  --color-brand-400: 56 189 248;
+  --color-brand-500: 14 165 233;
+  --color-brand-600: 2 132 199;
+  --color-brand-700: 3 105 161;
+  --color-brand-900: 12 74 110;
+
+  /* Accents */
+  --color-emerald-300: 110 231 183;
+  --color-emerald-400: 52 211 153;
+  --color-emerald-500: 16 185 129;
+  --color-emerald-600: 5 150 105;
+  --color-emerald-950: 2 44 34;
+
+  --color-amber-100: 254 243 199;
+  --color-amber-200: 253 230 138;
+  --color-amber-300: 252 211 77;
+  --color-amber-400: 251 191 36;
+  --color-amber-500: 245 158 11;
+  --color-amber-950: 69 26 3;
+
+  --color-rose-200: 254 205 211;
+  --color-rose-300: 253 164 175;
+  --color-rose-400: 251 113 133;
+  --color-rose-500: 244 63 94;
+  --color-rose-600: 225 29 72;
+  --color-rose-950: 76 5 25;
+}
+
+[data-theme="moderna-light"] {
+  /* Slate - Light (Inverted) */
+  --color-slate-50: 2 6 23;
+  --color-slate-100: 15 23 42;
+  --color-slate-200: 30 41 59;
+  --color-slate-300: 51 65 85;
+  --color-slate-400: 71 85 105;
+  --color-slate-500: 100 116 139;
+  --color-slate-600: 148 163 184;
+  --color-slate-700: 203 213 225;
+  --color-slate-800: 226 232 240;
+  --color-slate-900: 241 245 249;
+  --color-slate-950: 255 255 255; /* Use pure white for backgrounds in light mode */
+
+  --color-white: 15 23 42; /* Invert white text to very dark slate */
+  --color-black: 255 255 255;
+
+  /* Accent tweaks for light mode contrast if needed */
+  --color-amber-950: 254 243 199; /* Invert the warning box background */
+}

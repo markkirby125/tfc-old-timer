@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB" class="scroll-smooth">
+<html lang="en-GB" class="scroll-smooth" data-theme="moderna-dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,33 +36,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          },
-          colors: {
-            brand: {
-              50: '#f0f9ff',
-              100: '#e0f2fe',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              900: '#0c4a6e',
-            },
-            accent: {
-              500: '#10b981',
-              600: '#059669',
-            }
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <script src="/assets/js/tailwind-config.js"></script>
 
   <style>
     .bg-grid-pattern {
