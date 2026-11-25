@@ -1,45 +1,5 @@
 # Theme Implementation Tasks
 
-## 1. [x] Refactor Color Palette & Theme Tokens
-* **Details:** Refactor the current hardcoded Tailwind colors into semantic CSS variables (e.g., `bg-primary`, `text-accent`). Define the current slate/brand-blue palette as the "Moderna" theme with both Light and Dark mode variables.
-* **Assigned Skills:** `better-colors`
+Open tasks live in Backlog.md (`backlog/tasks/`, 7 tasks, imported 2026-11-25 from this file and docs/TASKS.md; label `root` or `docs` marks the source). Use `npx backlog.md task list --plain` to list them, `npx backlog.md task <id> --plain` to read one, and `npx backlog.md task create` or `task edit` to change them.
 
-## 2. [x] Design the "Oldtimer" Theme
-* **Details:** Create a second set of CSS variables that mimic the classic Windows UI / TFC application aesthetic. This will include retro grays, classic system blues, inset border styles, and system fonts (`Tahoma`, `Segoe UI`), mapped cleanly into both a Light variant and a high-contrast retro Dark variant.
-* **Assigned Skills:** `better-colors`, `better-ui`
-
-## 3. [x] Implement Theme Switcher UI & Logic
-* **Details:** Inject a beautifully polished Theme Switcher dropdown into the desktop and mobile navigation bars. It will allow users to toggle between **Moderna (Light/Dark)** and **Oldtimer (Light/Dark)**. The logic will persist the user's choice in `localStorage` and include a smooth theme-switch transition.
-* **Assigned Skills:** `better-ui`, `emil-design-eng`
-
-## 4. [ ] Refine Theme Aesthetics
-* **Details:** The themes need further visual refinement. Specifically, the Oldtimer theme should be heavily Windows 7 influenced (Aero Glass, drop shadows, glossy gradients). The light themes also need comprehensive testing to ensure all text has sufficient contrast and background variables map correctly to bright, readable colors.
-* **Assigned Skills:** `better-ui`, `better-colors`, `emil-design-eng`
-* **Model:** Pro | **Effort:** Medium
-
-# GitHub Repository Optimization (Grok Report v2)
-
-## 5. [ ] GitHub Metadata & Configuration Setup
-* **Details:** Update the repository "About" section, inject SEO topics (`tfc`, `windows-7`, `malware-cleanup`), generate and upload a dark-mode terminal social preview image, enable Discussions, and create strict Issue templates.
-* **Assigned Skills:** `gh`, `seo-image-gen`
-* **Model:** Flash | **Effort:** Low
-
-## 6. [ ] README.md Complete Revamp
-* **Details:** Add download badge, "Not this TFC" disambiguation box, screenshot/log, PowerShell snippet, and retro ASCII banner. Create a `NOT-SOURCE/` directory.
-* **Assigned Skills:** `better-writing`, `seo-content`
-* **Model:** Pro | **Effort:** Medium
-
-## 7. [ ] Trust & Verification Pack
-* **Details:** Create `/hashes` directory (`TFC.exe.md5`, `.sha256`, `.sha1`). Write `VERIFICATION.md` and a brutally honest `SECURITY.md`.
-* **Assigned Skills:** `caveman-commit`, `token-efficiency`
-* **Model:** Flash | **Effort:** Low
-
-## 8. [ ] Ecosystem & Documentation Expansion
-* **Details:** Create `SUITE.md`, `COMPAT.md` (matrix), `BEFORE-AFTER.md` (lab notes), and `CITATION.cff`.
-* **Assigned Skills:** `architect`, `write-content`
-* **Model:** Pro | **Effort:** Medium
-
-## 9. [ ] Release Asset Restructuring
-* **Details:** Rename attached assets (`TFC-3.1.9.0-OldTimer.exe`, `TFC-3.1.9.0-SHA256.txt`, `TFC-3.1.9.0.VirusTotal.txt`). Write a definitive release body.
-* **Assigned Skills:** `gh`
-* **Model:** Flash | **Effort:** Low
+Finished work: TASKS-ARCHIVE.md. Long evidence: TASKS-EVIDENCE.md. The pre-migration copy of this file is in git history and in `~/backups/tasks-backlog-2026-11-25/tfc-old-timer/`.
